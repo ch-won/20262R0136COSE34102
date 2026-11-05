@@ -65,7 +65,7 @@ FCFS는 Process가 Ready Queue에 도착한 순서대로 CPU를 할당하는 Non
 - **장점:** 구현이 간단하고 도착 순서에 따라 공정하게 처리합니다.
 - **단점:** 긴 작업이 먼저 실행되면 짧은 작업의 대기 시간이 증가하는 Convoy Effect가 발생할 수 있습니다.
 - **특징:** CPU를 할당받은 Process는 자발적으로 CPU를 반환하거나 작업을 완료할 때까지 실행합니다.
-- 
+  
 ## SJF (Shortest Job First)
 
 SJF는 CPU Burst Time이 가장 짧은 Process를 우선 선택하는 Scheduling 알고리즘입니다.
@@ -81,3 +81,13 @@ RR은 각 Process에 일정한 Time Quantum을 할당하고, 시간이 만료되
 - **장점:** CPU를 주기적으로 배분하여 응답성을 높이고, Starvation을 방지합니다.
 - **단점:** Context Switching으로 인한 Overhead가 발생할 수 있습니다.
 - **특징:** Time Quantum이 너무 짧으면 Context Switching이 빈번해지고, 너무 길면 FCFS와 유사하게 동작합니다.
+
+## Scheduling Policy Comparison
+
+| Policy | Preemptive | Scheduling 기준 | 주요 특징 |
+|---|---|---|---|
+| FCFS | No | 도착 순서 | 단순하지만 Convoy Effect 발생 가능 |
+| SJF | No | 최단 CPU Burst Time | 평균 Waiting Time 감소에 유리 |
+| RR | Yes | Time Quantum | 응답성이 좋지만 Context Switching Overhead 발생 |
+
+각 Scheduling Policy는 처리 순서와 CPU 할당 방식에 따라 성능 특성이 달라집니다. 따라서 시스템의 목적과 Workload에 적합한 정책을 선택하는 것이 중요합니다.

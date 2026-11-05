@@ -44,3 +44,16 @@ System Call은 User Process가 Kernel의 기능을 요청하는 인터페이스�
 - **System Call Handler:** Kernel에서 요청된 작업을 처리하는 함수
 
 Linux에서는 `read()`, `write()`, `fork()` 등의 기능을 System Call을 통해 이용할 수 있습니다.
+
+## CPU Scheduling
+
+CPU Scheduling은 여러 Process 중 CPU를 사용할 대상을 선택하는 운영체제의 기능입니다.
+
+주요 평가 지표:
+- **CPU Utilization:** CPU가 작업을 수행하는 시간의 비율
+- **Throughput:** 단위 시간당 완료된 작업 수
+- **Waiting Time:** Ready Queue에서 대기한 총 시간
+- **Response Time:** 도착 후 최초로 CPU를 할당받기까지 걸린 시간
+- **Turnaround Time:** 도착부터 작업 완료까지 걸린 시간
+
+Scheduling Policy에 따라 시스템의 효율성과 응답성이 달라집니다.

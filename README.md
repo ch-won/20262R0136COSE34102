@@ -62,6 +62,14 @@ Scheduling Policy에 따라 시스템의 효율성과 응답성이 달라집니�
 
 FCFS는 Process가 Ready Queue에 도착한 순서대로 CPU를 할당하는 Non-preemptive Scheduling 알고리즘입니다.
 
+## SJF (Shortest Job First)
+
+SJF는 CPU Burst Time이 가장 짧은 Process를 우선 선택하는 Scheduling 알고리즘입니다.
+
+- **장점:** 모든 작업이 동시에 도착하고 실행 시간을 알고 있다면 평균 Waiting Time을 최소화할 수 있습니다.
+- **단점:** 긴 작업이 계속 대기하는 Starvation이 발생할 수 있으며, 정확한 CPU Burst Time을 예측하기 어렵습니다.
+- **특징:** Non-preemptive SJF에서는 실행 중인 Process가 CPU를 반환할 때까지 다른 Process가 선점할 수 없습니다.
+
 - **장점:** 구현이 간단하고 도착 순서에 따라 공정하게 처리합니다.
 - **단점:** 긴 작업이 먼저 실행되면 짧은 작업의 대기 시간이 증가하는 Convoy Effect가 발생할 수 있습니다.
 - **특징:** CPU를 할당받은 Process는 자발적으로 CPU를 반환하거나 작업을 완료할 때까지 실행합니다.

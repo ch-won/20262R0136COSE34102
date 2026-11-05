@@ -34,3 +34,13 @@ Multi-threading은 자원 공유를 통해 효율적인 Concurrent Execution을 
 - **Mode Switch:** System Call, Interrupt, Exception 등을 통해 CPU의 실행 모드가 전환됩니다.
 
 User Process는 System Call을 통해 Kernel의 기능을 요청할 수 있습니다.
+
+## System Call
+
+System Call은 User Process가 Kernel의 기능을 요청하는 인터페이스입니다.
+
+- **System Call Interface:** User Space에서 Kernel 기능을 호출하는 진입점
+- **Mode Switch:** System Call 실행 시 User Mode에서 Kernel Mode로 전환
+- **System Call Handler:** Kernel에서 요청된 작업을 처리하는 함수
+
+Linux에서는 `read()`, `write()`, `fork()` 등의 기능을 System Call을 통해 이용할 수 있습니다.

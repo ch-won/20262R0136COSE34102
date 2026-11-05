@@ -26,3 +26,11 @@
 - 각 Thread는 독립적인 Program Counter, Register, Stack을 가집니다.
 
 Multi-threading은 자원 공유를 통해 효율적인 Concurrent Execution을 지원합니다.
+
+## User Mode & Kernel Mode
+
+- **User Mode:** 일반 애플리케이션이 실행되는 제한된 권한의 모드입니다.
+- **Kernel Mode:** 운영체제가 하드웨어와 시스템 자원에 접근할 수 있는 특권 모드입니다.
+- **Mode Switch:** System Call, Interrupt, Exception 등을 통해 CPU의 실행 모드가 전환됩니다.
+
+User Process는 System Call을 통해 Kernel의 기능을 요청할 수 있습니다.

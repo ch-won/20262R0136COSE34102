@@ -18,3 +18,11 @@
 - **Tools:** GCC, Git, GitHub
 
 > 과제 Source Code는 공개하지 않으며, 학습 내용과 구현 과정만 기록합니다.
+
+## Process & Thread
+
+- **Process:** 실행 중인 프로그램으로, 독립적인 가상 주소 공간과 자원을 가집니다.
+- **Thread:** Process 내부의 실행 단위로, 같은 Process의 다른 Thread와 Code, Data, Heap을 공유합니다.
+- 각 Thread는 독립적인 Program Counter, Register, Stack을 가집니다.
+
+Multi-threading은 자원 공유를 통해 효율적인 Concurrent Execution을 지원합니다.

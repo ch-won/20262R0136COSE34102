@@ -57,3 +57,11 @@ CPU Scheduling은 여러 Process 중 CPU를 사용할 대상을 선택하는 운
 - **Turnaround Time:** 도착부터 작업 완료까지 걸린 시간
 
 Scheduling Policy에 따라 시스템의 효율성과 응답성이 달라집니다.
+
+## FCFS (First-Come First-Served)
+
+FCFS는 Process가 Ready Queue에 도착한 순서대로 CPU를 할당하는 Non-preemptive Scheduling 알고리즘입니다.
+
+- **장점:** 구현이 간단하고 도착 순서에 따라 공정하게 처리합니다.
+- **단점:** 긴 작업이 먼저 실행되면 짧은 작업의 대기 시간이 증가하는 Convoy Effect가 발생할 수 있습니다.
+- **특징:** CPU를 할당받은 Process는 자발적으로 CPU를 반환하거나 작업을 완료할 때까지 실행합니다.
